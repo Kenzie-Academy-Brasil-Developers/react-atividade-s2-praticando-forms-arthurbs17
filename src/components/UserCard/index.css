@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container button {
+  margin-bottom: 5px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(99, 0, 0);
+  color: #fff;
+}
+
+.card {
+  list-style: none;
+  text-align: left;
+  font-variant: small-caps;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(99, 0, 0);
+  color: #fff;
+}
+
+.card li {
+  padding: 5px;
+}

@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form button {
+  background-color: rgb(85, 0, 0);
+  border: none;
+  padding: 10px;
+  color: #fff;
+}
+
+.inputSec {
+  border: 2px solid rgb(85, 0, 0);
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #708090;
+  color: #fff;
+}
+
+.inputSec::placeholder {
+  color: rgb(194, 194, 194);
+}
+
+.msgError {
+  color: rgb(85, 0, 0);
+  font-size: 15px;
+}
+
+.msgError::before {
+  content: "*";
+}
