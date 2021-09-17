@@ -17,7 +17,7 @@ const Form = ({ setUsers }) => {
       .string()
       .min(8, "8 caracteres no minímo")
       .matches(
-        /^(?=.*[a-z])(?=.*[A-Z])(?=.*d)(?=.*[@$!%*?&.])[A-Za-zd@$!%*?&.]/,
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/,
         "Senha fraca"
       )
       .required("Campo obrigatório"),
@@ -74,6 +74,7 @@ const Form = ({ setUsers }) => {
           {...register("password")}
           placeholder="Senha"
           className={className}
+          type="password"
         />
         {errors.password?.message && (
           <span className="msgError">{errors.password.message}</span>
@@ -82,6 +83,7 @@ const Form = ({ setUsers }) => {
           {...register("confirmPassword")}
           placeholder="Confirme a senha"
           className={className}
+          type="password"
         />
         {errors.confirmPassword?.message && (
           <span className="msgError">{errors.confirmPassword.message}</span>
